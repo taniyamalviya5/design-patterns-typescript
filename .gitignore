@@ -12,7 +12,7 @@ build/
 
 # TypeScript cache
 *.tsbuildinfo
-
+ 
 # Environment variables
 .env
 
