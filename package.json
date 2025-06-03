@@ -1,0 +1,12 @@
+{
+  "name": "design-patterns-in-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon index.ts"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
