@@ -63,6 +63,8 @@ const clientCode = (factory: AbstractFactoryInterface) => {
 
 // Abstract Factory Pattern Implementation
 const AbstractFactory = async () => {
+    console.log('Abstract Factory Design Pattern');
+    console.log('--------------------------');
     console.log('Client: Testing client code with the first factory type...');
     clientCode(ConcreteFactoryA());
 

@@ -59,6 +59,8 @@ const ClientCode = (creator: CreatorInterface) => {
 
 const Factory = () => {
     console.log('');
+    console.log('Factory Design Pattern');
+    console.log('--------------------------');
     console.log("App: Launched with the ConcreteCreator1.");
     ClientCode(ConcreteCreator1());
     console.log("");

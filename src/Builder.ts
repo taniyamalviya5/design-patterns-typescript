@@ -76,6 +76,9 @@ const Builder = () => {
 
     director.setBuilder(builder);
 
+    console.log('Builder Design Pattern');
+    console.log('--------------------------');
+
     console.log("Building minimal viable product:");
     director.buildMinimalViableProduct();
     const product1 = builder.getProduct();
