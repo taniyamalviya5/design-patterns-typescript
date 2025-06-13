@@ -74,7 +74,6 @@ const AbstractFactory = async () => {
     clientCode(ConcreteFactoryB());
 
     console.log('');
-
 };
 
 export default AbstractFactory;
