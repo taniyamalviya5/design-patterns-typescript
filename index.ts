@@ -4,6 +4,7 @@ import Factory from "./src/Factory";
 import Singleton from "./src/Singleton";
 import Adapter from "./src/Adapter";
 import Bridge from "./src/Bridge";
+import Composite from "./src/Composite";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -16,3 +17,4 @@ Factory();
 Singleton();
 Adapter();
 Bridge();
+Composite();
