@@ -5,6 +5,7 @@ import Singleton from "./src/Singleton";
 import Adapter from "./src/Adapter";
 import Bridge from "./src/Bridge";
 import Composite from "./src/Composite";
+import Iterator from "./src/Iterator";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -18,3 +19,4 @@ Singleton();
 Adapter();
 Bridge();
 Composite();
+Iterator();
