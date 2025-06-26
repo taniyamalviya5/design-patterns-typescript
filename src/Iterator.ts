@@ -18,8 +18,7 @@ interface WordsCollectionInterface {
     getReverseIterator(): Iterator<string>;
 }
 
-const WordsCollection = (): WordsCollectionInterface => {
-    let items: string[] = [];
+const WordsCollection = (items: string[] = []): WordsCollectionInterface => {
 
     const getItems = (): string[] => items;
 
@@ -30,11 +29,11 @@ const WordsCollection = (): WordsCollectionInterface => {
     }
 
     const getIterator = (): Iterator<string> => {
-        return AlphabeticalIterator(WordsCollection());
+        return AlphabeticalIterator(WordsCollection(items));
     }
 
     const getReverseIterator = (): Iterator<string> => {
-        return AlphabeticalIterator(WordsCollection(), true);
+        return AlphabeticalIterator(WordsCollection(items), true);
     }
 
     return {

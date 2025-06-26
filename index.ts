@@ -6,6 +6,7 @@ import Adapter from "./src/Adapter";
 import Bridge from "./src/Bridge";
 import Composite from "./src/Composite";
 import Iterator from "./src/Iterator";
+import Mediator from "./src/Mediator";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -20,3 +21,4 @@ Adapter();
 Bridge();
 Composite();
 Iterator();
+Mediator();
