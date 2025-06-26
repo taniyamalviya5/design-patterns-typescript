@@ -50,8 +50,6 @@ const Singleton = () => {
     console.log('Singleton Design Pattern');
     console.log('--------------------------');
     ClientCode();
-
-    console.log('');
 };
 
 export default Singleton;

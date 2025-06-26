@@ -7,6 +7,7 @@ import Bridge from "./src/Bridge";
 import Composite from "./src/Composite";
 import Iterator from "./src/Iterator";
 import Mediator from "./src/Mediator";
+import Memento from "./src/Memento";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -14,11 +15,12 @@ console.log("Design patterns initialized successfully");
 console.log('');
 
 AbstractFactory();
-Builder();
-Factory();
-Singleton();
 Adapter();
 Bridge();
+Builder();
 Composite();
+Factory();
 Iterator();
 Mediator();
+Singleton();
+Memento();
