@@ -8,6 +8,7 @@ import Composite from "./src/Composite";
 import Iterator from "./src/Iterator";
 import Mediator from "./src/Mediator";
 import Memento from "./src/Memento";
+import Observer from "./src/Observer";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -24,3 +25,4 @@ Iterator();
 Mediator();
 Singleton();
 Memento();
+Observer();
