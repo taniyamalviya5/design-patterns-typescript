@@ -9,6 +9,7 @@ import Iterator from "./src/Iterator";
 import Mediator from "./src/Mediator";
 import Memento from "./src/Memento";
 import Observer from "./src/Observer";
+import State from "./src/State";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -26,3 +27,4 @@ Mediator();
 Singleton();
 Memento();
 Observer();
+State();
