@@ -10,6 +10,8 @@ import Mediator from "./src/Mediator";
 import Memento from "./src/Memento";
 import Observer from "./src/Observer";
 import State from "./src/State";
+import Strategy from "./src/Strategy";
+import Template from "./src/Template";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -28,3 +30,5 @@ Singleton();
 Memento();
 Observer();
 State();
+Strategy();
+Template();

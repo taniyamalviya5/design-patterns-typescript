@@ -89,6 +89,7 @@ const Context = (initialState: StateInterface): ContextInterface => {
 // Client code
 const main = () => {
     console.log('');
+
     console.log('State Design Pattern');
     console.log('--------------------------');
 
