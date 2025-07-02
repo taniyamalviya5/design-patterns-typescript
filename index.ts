@@ -12,6 +12,7 @@ import Observer from "./src/Observer";
 import State from "./src/State";
 import Strategy from "./src/Strategy";
 import Template from "./src/Template";
+import Visitor from "./src/Visitor";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -32,3 +33,4 @@ Observer();
 State();
 Strategy();
 Template();
+Visitor();
