@@ -13,6 +13,8 @@ import State from "./src/State";
 import Strategy from "./src/Strategy";
 import Template from "./src/Template";
 import Visitor from "./src/Visitor";
+import Decorator from "./src/Decorator";
+import Facade from "./src/Facade";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -34,3 +36,5 @@ State();
 Strategy();
 Template();
 Visitor();
+Decorator();
+Facade();
