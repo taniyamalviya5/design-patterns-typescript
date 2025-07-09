@@ -15,6 +15,9 @@ import Template from "./src/Template";
 import Visitor from "./src/Visitor";
 import Decorator from "./src/Decorator";
 import Facade from "./src/Facade";
+import Flyweight from "./src/Flyweight";
+import Proxy from "./src/Proxy";
+import ChainOfResponsibility from "./src/ChainOfResponsibility";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -38,3 +41,6 @@ Template();
 Visitor();
 Decorator();
 Facade();
+Flyweight();
+Proxy();
+ChainOfResponsibility();
