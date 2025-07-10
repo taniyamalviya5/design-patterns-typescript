@@ -20,39 +20,48 @@ const AbstractHandler = (): HandlerInterface => {
 
     return {
         setNext,
-        handle
+        handle,
     }
 };
 
-const MonkeyHandler = (): HandlerInterface => ({
-    ...AbstractHandler(),
-    handle: (request: string): string | null => {
-        if (request === 'Banana') {
-            return `Monkey: I'll eat the ${request}.`;
-        }
-        return AbstractHandler().handle(request);
-    }
-});
+const MonkeyHandler = (): HandlerInterface => {
+    const baseHandler = AbstractHandler();
+    return {
+        ...baseHandler,
+        handle: (request: string): string | null => {
+            if (request === 'Banana') {
+                return ` Monkey: I'll eat the ${request}.`;
+            }
+            return baseHandler.handle(request);
+        },
+    };
+};
 
-const SquirrelHandler = (): HandlerInterface => ({
-    ...AbstractHandler(),
-    handle: (request: string): string | null => {
-        if (request === 'Nut') {
-            return `Squirrel: I'll eat the ${request}.`;
-        }
-        return AbstractHandler().handle(request);
+const SquirrelHandler = (): HandlerInterface => {
+    const baseHandler = AbstractHandler();
+    return {
+        ...baseHandler,
+        handle: (request: string): string | null => {
+            if (request === 'Nut') {
+                return ` Squirrel: I'll eat the ${request}.`;
+            }
+            return baseHandler.handle(request);
+        },
     }
-});
+};
 
-const DogHandler = (): HandlerInterface => ({
-    ...AbstractHandler(),
-    handle: (request: string): string | null => {
-        if (request === 'MeatBall') {
-            return `Dog: I'll eat the ${request}.`;
-        }
-        return AbstractHandler().handle(request);
+const DogHandler = (): HandlerInterface => {
+    const baseHandler = AbstractHandler();
+    return {
+        ...baseHandler,
+        handle: (request: string): string | null => {
+            if (request === 'MeatBall') {
+                return ` Dog: I'll eat the ${request}.`;
+            }
+            return baseHandler.handle(request);
+        },
     }
-});
+};
 
 const clientCode = (handler: HandlerInterface): void => {
     const foods = ['Nut', 'Banana', 'Cup of coffee'];
@@ -72,7 +81,7 @@ const main = () => {
     console.log('');
 
     console.log('Chain of Responsibility Design Pattern');
-    console.log('--------------------------');
+    console.log('-----------------------------------------');
 
     const monkey = MonkeyHandler();
     const squirrel = SquirrelHandler();

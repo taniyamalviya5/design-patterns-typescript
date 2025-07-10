@@ -18,6 +18,7 @@ import Facade from "./src/Facade";
 import Flyweight from "./src/Flyweight";
 import Proxy from "./src/Proxy";
 import ChainOfResponsibility from "./src/ChainOfResponsibility";
+import Command from "./src/Command";
 // Initialize all design patterns
 
 // Add any additional initialization logic if needed
@@ -44,3 +45,4 @@ Facade();
 Flyweight();
 Proxy();
 ChainOfResponsibility();
+Command();
